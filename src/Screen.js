@@ -85,11 +85,11 @@ class Screen extends Component {
 
   render() {
     const {valueDisplay} = this.state;
-    const {expression} = this.props;
+    // const {expression} = this.props;
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.vTop}>
-          <Text style={styles.txtDisplay}>{expression}</Text>
+          {/* <Text style={styles.txtDisplay}>{expression}</Text> */}
           <Text style={styles.txtDisplay}>{valueDisplay}</Text>
         </View>
         <View style={styles.vBottom}>
