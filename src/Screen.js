@@ -41,7 +41,6 @@ class Screen extends Component {
     this.setState(Object.assign({}, INIT_STATE));
     this.props.handleErase();
   };
-  // TODO: HANDLE THE DEVIDE BY 0;
   _handleBtn = value => {
     const {newNumber, valueDisplay} = this.state;
     switch (value) {

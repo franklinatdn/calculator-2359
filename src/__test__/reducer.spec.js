@@ -128,5 +128,14 @@ describe('test reducer', () => {
 
     let result2 = calculate('-1.1+2.2-3');
     expect(result2).toEqual('-1.9');
+
+    let result3 = calculate('-1-2-3');
+    expect(result3).toEqual('-6');
+    let result4 = calculate('1+2-3*4');
+    expect(result4).toEqual('-9');
+    let result5 = calculate('1+2-3*4/0');
+    expect(result5).toEqual('1+2-3*4/0\n Can not divide 0');
+    let result6 = calculate('1+2/0.-3*4');
+    expect(result6).toEqual('1+2/0.-3*4\n Can not divide 0');
   });
 });
